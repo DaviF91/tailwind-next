@@ -3,6 +3,7 @@ import { Search, Home, BarChart, SquareStack, CheckSquare, Flag, Users, LifeBuoy
 
 import { NavItem } from "./NavItem";
 import { UsedSpaceWidget } from "./UsedSpaceWidget";
+import { Profile } from "./Profile";
 
 
 export function Sidebar() {
@@ -30,7 +31,11 @@ export function Sidebar() {
           <NavItem title="Settings" icon={Cog} />
         </nav>
 
-        <UsedSpaceWidget/>
+        <UsedSpaceWidget />
+        
+        <div className="h-px bg-zinc-200"></div>
+
+        <Profile />
       </div>
     </aside>
   )
