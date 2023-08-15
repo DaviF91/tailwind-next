@@ -1,9 +1,11 @@
-import Image from 'next/image'
+import { SettingsTabs } from "./components/SettingsTabs";
 
 export default function Home() {
   return (
-    <div>
-      Helooww
-   </div>
+    <>
+      <h1 className='text-3xl font-medium text-zinc-900'>Setings</h1>
+
+     <SettingsTabs />
+    </>
   )
 }
